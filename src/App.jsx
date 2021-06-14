@@ -1,16 +1,16 @@
 import React from "react";
 import "./App.css";
-import Nav from "./Nav";
+import Nav from "./Components/Nav/Nav";
+import Home from "./Components/Home/Home";
+import { Route } from "react-router-dom";
 
 export default function App() {
   return (
-    <div className="container">
-      <Nav />
-      <div className="waves">
-        <div className="wave circulo a"></div>
-        <div className="wave circulo b"></div>
-        <div className="wave circulo c"></div>
+    <React.Fragment>
+      <div className="container">
+        <Route exact path="/" component={Home} />
+        <Route path="/" component={Nav} />
       </div>
-    </div>
+    </React.Fragment>
   );
 }
