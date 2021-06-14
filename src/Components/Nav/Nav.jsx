@@ -8,6 +8,7 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import DesktopWindowsIcon from "@material-ui/icons/DesktopWindows";
+import { NavLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+  removelink: { textDecoration: "none", color: "rgb(132, 58, 195)" },
 }));
 
 export default function Nav() {
@@ -32,16 +34,18 @@ export default function Nav() {
       >
         <Toolbar>
           <Typography variant="h6" className={classes.title} color="primary">
-            <Button to="/home" color="primary">
-              <IconButton
-                edge="start"
-                className={classes.menuButton}
-                color="inherit"
-                aria-label="menu"
-              >
-                <DesktopWindowsIcon />
-              </IconButton>
-              Quiero Programar !
+            <Button color="primary">
+              <NavLink to="/" className={classes.removelink}>
+                <IconButton
+                  edge="start"
+                  className={classes.menuButton}
+                  color="inherit"
+                  aria-label="menu"
+                >
+                  <DesktopWindowsIcon />
+                </IconButton>
+                Quiero Programar !
+              </NavLink>
             </Button>
           </Typography>
 
@@ -50,10 +54,14 @@ export default function Nav() {
             variant="outlined"
             className={classes.menuButton}
           >
-            Info
+            <NavLink to="/info" className={classes.removelink}>
+              Info
+            </NavLink>
           </Button>
           <Button color="primary" variant="outlined">
-            Contacto
+            <NavLink to="/contact" className={classes.removelink}>
+              Contacto
+            </NavLink>
           </Button>
         </Toolbar>
       </AppBar>

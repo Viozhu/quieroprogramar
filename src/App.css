@@ -10,10 +10,11 @@ body {
   );
   position: relative;
 }
+
 .waves {
   position: absolute;
   bottom: 0px;
-  height: 90vh;
+  height: 50vh;
   width: 100%;
   overflow: hidden;
 }
