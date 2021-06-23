@@ -5,6 +5,7 @@ import Home from "./Components/Home/Home";
 import Contact from "./Components/Contact/Contact";
 import Info from "./Components/Info/Info";
 import { Route } from "react-router-dom";
+import Questions from "./Components/Questions/Questions";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/info" component={Info} />
         <Route exact path="/contact" component={Contact} />
+        <Route exact path="/questions" component={Questions} />
       </div>
     </React.Fragment>
   );
