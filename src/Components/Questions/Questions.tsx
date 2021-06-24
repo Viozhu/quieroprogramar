@@ -68,11 +68,12 @@ export default function Questions() {
       });
       setPoints(points + 10);
     } else {
+      let res = questionsObjs.filter((x) => x.id === num);
+
       Swal.fire({
         title: "Ups,es incorrecto",
         icon: "error",
-        timer: 1200,
-        showConfirmButton: false,
+        text: res[0].awnser,
       });
     }
 
