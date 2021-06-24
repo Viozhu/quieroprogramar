@@ -59,17 +59,15 @@ export default function Questions() {
   };
 
   const anwser = (awnser: boolean): void => {
+    let res = questionsObjs.filter((x) => x.id === num);
     if (awnser) {
       Swal.fire({
         title: "Correcto",
         icon: "success",
-        timer: 1200,
-        showConfirmButton: false,
+        text: res[0].awnser,
       });
       setPoints(points + 10);
     } else {
-      let res = questionsObjs.filter((x) => x.id === num);
-
       Swal.fire({
         title: "Ups,es incorrecto",
         icon: "error",

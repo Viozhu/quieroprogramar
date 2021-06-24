@@ -15,7 +15,7 @@ const questionsObjs = [
     option: false,
     optionTwo: true,
     awnser:
-      "No, React se puede escribir con varios lenguajes entre ellos Javascript o Typescript",
+      "React se puede escribir con varios lenguajes entre ellos Javascript o Typescript",
   },
   {
     id: 2,
@@ -23,8 +23,7 @@ const questionsObjs = [
     text: "Como sabemos en la actualidad se puede escribir codigo react en archivos .js como en .jsx pero es lo mismo?",
     option: false,
     optionTwo: true,
-    awnser:
-      "Si y no, ambos funcionan pero los archivos .jsx tienen mejor rendimiento",
+    awnser: "Ambos funcionan pero los archivos .jsx tienen mejor rendimiento",
   },
   {
     id: 3,
@@ -34,7 +33,7 @@ const questionsObjs = [
     option: true,
     optionTwo: false,
     awnser:
-      "Sí, Un componente de React acepta entradas y devuelve el elemento, lo cual es simplemente una descripción de lo que puedes ver en pantalla.",
+      "Un componente de React acepta entradas y devuelve el elemento, lo cual es simplemente una descripción de lo que puedes ver en pantalla.",
   },
   {
     id: 4,
@@ -43,7 +42,7 @@ const questionsObjs = [
     option: false,
     optionTwo: true,
     awnser:
-      "No, no pueden. Los exploradores web están configurados de cierta manera que solo son capaces de leer objetos JavaScript. Aunque similares, un objeto JSX no es lo mismo a un objeto JS.",
+      "Los exploradores web están configurados de cierta manera que solo son capaces de leer objetos JavaScript. Aunque similares, un objeto JSX no es lo mismo a un objeto JS.",
   },
   {
     id: 5,
@@ -61,7 +60,7 @@ const questionsObjs = [
     text: "Son valores únicos u objetos que contienen un conjunto de valores que se pasan a los componentes.",
     option: true,
     optionTwo: false,
-    awnser: "Sí, Las Props son inputs de los componentes.",
+    awnser: "Las Props son inputs de los componentes.",
   },
   {
     id: 7,
@@ -71,7 +70,7 @@ const questionsObjs = [
     option: false,
     optionTwo: true,
     awnser:
-      "No, React crea un DOM virtual, por ende utiliza otra manera de escribir codigo HTML.",
+      "React crea un DOM virtual, por ende utiliza otra manera de escribir codigo HTML.",
   },
   {
     id: 8,
@@ -88,7 +87,7 @@ const questionsObjs = [
     text: "Hooks son una nueva característica en React 16.8. Estos te permiten usar el estado y otras características de React sin escribir en una ...",
     option: true,
     optionTwo: false,
-    awnser: "Sí, Los Hooks solo se puden usar componentes de funciones.",
+    awnser: "Los Hooks solo se puden usar componentes de funciones.",
   },
 ];
 

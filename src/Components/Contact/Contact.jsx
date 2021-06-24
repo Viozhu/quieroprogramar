@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "card-vibes";
 import { makeStyles } from "@material-ui/core/styles";
-import { Typography } from "@material-ui/core";
+import { Typography, useMediaQuery } from "@material-ui/core";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -26,6 +26,7 @@ const useStyles = makeStyles(() => ({
 
 export default function Contact() {
   const classes = useStyles();
+  const matches = useMediaQuery("(max-width:768px)");
 
   return (
     <>
@@ -53,11 +54,15 @@ export default function Contact() {
                 </Typography>
               </div>
               <div>
-                <img
-                  className={classes.img}
-                  src="https://avatars.githubusercontent.com/u/76756295?v=4"
-                  alt="pic"
-                />
+                {matches ? (
+                  ""
+                ) : (
+                  <img
+                    className={classes.img}
+                    src="https://avatars.githubusercontent.com/u/76756295?v=4"
+                    alt="pic"
+                  />
+                )}
               </div>
             </div>
             <div className={classes.icons}>

@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Waves from "./../Waves/Waves";
+
 import {
   Grid,
   Divider,
@@ -10,10 +10,14 @@ import {
   CardMedia,
   CardContent,
   Button,
+  useMediaQuery,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
+  all: {
+    overflow: "auto",
+  },
   root: {
     flexGrow: 1,
     display: "flex",
@@ -53,9 +57,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Home() {
+  const matches = useMediaQuery("(max-width:768px)");
+  console.log(matches, "hola");
   const classes = useStyles();
   return (
-    <>
+    <div className={classes.all}>
       <div className={classes.btn}>
         <Typography variant="h2" className={classes.text}>
           ⇝  
@@ -70,7 +76,7 @@ export default function Home() {
             style={{ textDecoration: "none", color: "rgb(132, 58, 195)" }}
           >
             <Typography
-              variant="h4"
+              variant={matches ? "h6" : "h4"}
               align="center"
               color="primary"
               className={classes.text}
@@ -84,8 +90,12 @@ export default function Home() {
         </Typography>
       </div>
       <div className={classes.home}>
-        <Grid container className={classes.root}>
-          <Grid item xs={3}>
+        <Grid
+          container
+          className={classes.root}
+          direction={matches ? "column" : "row"}
+        >
+          <Grid item xs={matches ? 12 : 3}>
             <Card className={classes.rootCard}>
               <CardActionArea>
                 <CardMedia
@@ -115,7 +125,7 @@ export default function Home() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={matches ? 12 : 3}>
             <Card className={classes.rootCard}>
               <CardActionArea>
                 <CardMedia
@@ -145,7 +155,7 @@ export default function Home() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={matches ? 12 : 3}>
             <Card className={classes.rootCard}>
               <CardActionArea>
                 <CardMedia
@@ -176,7 +186,15 @@ export default function Home() {
           </Grid>
         </Grid>
       </div>
-      <Waves />
-    </>
+      {matches ? (
+        ""
+      ) : (
+        <div className="waves">
+          <div className="wave circulo a"></div>
+          <div className="wave circulo b"></div>
+          <div className="wave circulo c"></div>
+        </div>
+      )}
+    </div>
   );
 }

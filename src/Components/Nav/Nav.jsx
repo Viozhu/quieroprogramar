@@ -5,6 +5,7 @@ import {
   Typography,
   Button,
   IconButton,
+  useMediaQuery,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import DesktopWindowsIcon from "@material-ui/icons/DesktopWindows";
@@ -25,7 +26,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Nav() {
+  const matches = useMediaQuery("(max-width:768px)");
   const classes = useStyles();
+
   return (
     <div className={classes.root}>
       <AppBar
@@ -44,7 +47,7 @@ export default function Nav() {
                 >
                   <DesktopWindowsIcon />
                 </IconButton>
-                Quiero Programar !
+                {matches ? "" : "Quiero Programar !"}
               </NavLink>
             </Button>
           </Typography>
