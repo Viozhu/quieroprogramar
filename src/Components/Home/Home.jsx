@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(3),
 
     border: "7px solid #ffff",
-    height: 400,
+    height: 420,
   },
   media: {
     height: 170,
@@ -57,6 +57,9 @@ export default function Home() {
   return (
     <>
       <div className={classes.btn}>
+        <Typography variant="h2" className={classes.text}>
+          ⇝  
+        </Typography>
         <Button
           variant="outlined"
           color="primary"
@@ -72,10 +75,13 @@ export default function Home() {
               color="primary"
               className={classes.text}
             >
-              ¡ Quiero Programar !
+              ¡ Front End Quizz !
             </Typography>
           </NavLink>
         </Button>
+        <Typography variant="h2" className={classes.text}>
+            ⇜
+        </Typography>
       </div>
       <div className={classes.home}>
         <Grid container className={classes.root}>
@@ -93,9 +99,9 @@ export default function Home() {
                     variant="h5"
                     component="h2"
                     align="center"
+                    style={{ height: "4rem" }}
                   >
                     Facil de aprender
-                    <br /> 
                   </Typography>
                   <Divider />
                   <Typography
@@ -104,9 +110,10 @@ export default function Home() {
                     component="p"
                   >
                     <br />
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    Resulta ser, que contrario a lo que muchos podrán pensar,
+                    las computadoras son extremadamente tontas, sin embargo,
+                    también resulta ser que son buenísimas para seguir órdenes.
+                    Solo debes dar las ordenes.
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -126,9 +133,9 @@ export default function Home() {
                     variant="h5"
                     component="h2"
                     align="center"
+                    style={{ height: "4rem" }}
                   >
                     Divertido
-                    <br /> 
                   </Typography>
                   <Divider />
                   <Typography
@@ -137,9 +144,10 @@ export default function Home() {
                     component="p"
                   >
                     <br />
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    Sabiendo programación además entendés cómo funciona tu
+                    computadora y cómo reacciona cada programa a las órdenes que
+                    vos le das. Te convertís en una persona con una habilidad
+                    única: la de crear cosas.
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -159,6 +167,7 @@ export default function Home() {
                     variant="h5"
                     component="h2"
                     align="center"
+                    style={{ height: "4rem" }}
                   >
                     Te prepara para el futuro
                   </Typography>
@@ -169,9 +178,9 @@ export default function Home() {
                     component="p"
                   >
                     <br />
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    La programación es el trabajo del futuro, ya que el
+                    desarrollo de software y web es imprescindible para que los
+                    sectores laborales den el salto a la transformación digital.
                   </Typography>
                 </CardContent>
               </CardActionArea>

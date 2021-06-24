@@ -66,7 +66,7 @@ const questionsObjs = [
   {
     id: 7,
     question:
-      " En un button ¿ Es lo mismo escribir onclick='funcionUno()' que onClick={funcionUno()}?",
+      " En un button ¿ Es lo mismo escribir onclick='funcionUno()' que       onClick={funcionUno()?",
     text: "",
     option: false,
     optionTwo: true,
