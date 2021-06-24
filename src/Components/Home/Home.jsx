@@ -104,11 +104,7 @@ export default function Home() {
                     Facil de aprender
                   </Typography>
                   <Divider />
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
+                  <Typography variant="body2" component="p">
                     <br />
                     Resulta ser, que contrario a lo que muchos podrán pensar,
                     las computadoras son extremadamente tontas, sin embargo,
@@ -138,11 +134,7 @@ export default function Home() {
                     Divertido
                   </Typography>
                   <Divider />
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
+                  <Typography variant="body2" component="p">
                     <br />
                     Sabiendo programación además entendés cómo funciona tu
                     computadora y cómo reacciona cada programa a las órdenes que
@@ -172,11 +164,7 @@ export default function Home() {
                     Te prepara para el futuro
                   </Typography>
                   <Divider />
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
+                  <Typography variant="body2" component="p">
                     <br />
                     La programación es el trabajo del futuro, ya que el
                     desarrollo de software y web es imprescindible para que los

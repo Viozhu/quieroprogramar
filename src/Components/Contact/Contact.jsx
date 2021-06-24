@@ -43,7 +43,7 @@ export default function Contact() {
             </Typography>
             <div className={classes.body}>
               <div className={classes.text}>
-                <Typography variant="body1">
+                <Typography variant="body1" style={{ color: "#fff" }}>
                   Diseñador web y desarrollador Full-Stack, amante del
                   front-end. Me forme en Henry como desarrollador Full-stack,
                   creando proyectos que fueran reales y complejo. Además, el
