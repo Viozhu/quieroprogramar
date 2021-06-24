@@ -75,7 +75,7 @@ export default function Home() {
               color="primary"
               className={classes.text}
             >
-              ¡ Front End Quizz !
+              ¡ Front End Quiz !
             </Typography>
           </NavLink>
         </Button>

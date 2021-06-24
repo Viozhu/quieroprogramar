@@ -27,8 +27,8 @@ export default function Info() {
               Quiero Programar es una web destinada a todos esos programadores
               que recien estan iniciando en este mundo de la programación.
               <br />
-              Es basicamente un quizz con preguntas teoricas que muchas veces
-              son preguntadas en entrevistas laborales del Front-End.
+              Es basicamente un quiz con preguntas teoricas que muchas veces son
+              preguntadas en entrevistas laborales del Front-End.
               <br /> Son preguntas orientadas a lo que es react y todo su
               ambito.
               <br />
