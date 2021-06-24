@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  Container,
-  Typography,
-} from "@material-ui/core";
+import { Card, CardContent, Container, Typography } from "@material-ui/core";
 
 export default function Info() {
   let web1: string =
