@@ -2,16 +2,16 @@ const questionsObjs = [
   {
     id: 0,
     question: "¿ React es un FrameWork ?",
-    text: "React es un codigo abierto front-end JavaScript (FrameWork o Library) que es usado para construir interfaces especializado para single page aplications and mucho mas!",
+    text: "React es un código abierto front-end JavaScript (FrameWork o Library) que es usado para construir interfaces especializado para single page aplications and mucho mas!",
     option: false,
     optionTwo: true,
     awnser:
-      "React es una liberia que es usada para construir interfaces especializado para single page aplications y mucho mas!",
+      "React es una librería que es usada para construir interfaces especializado para single page aplications y mucho mas!",
   },
   {
     id: 1,
     question: "¿ React solo se puede escribir con JavaScript ?",
-    text: "Como sabemos Ract es una libreria de Javascript, pero solo se pude codear con ese lenguaje ?",
+    text: "Como sabemos Ract es una librería de Javascript, pero solo se pude codear con ese lenguaje ?",
     option: false,
     optionTwo: true,
     awnser:
@@ -19,8 +19,8 @@ const questionsObjs = [
   },
   {
     id: 2,
-    question: "¿ Es lo mimo utilizar .js que .jsx ?",
-    text: "Como sabemos en la actualidad se puede escribir codigo react en archivos .js como en .jsx pero es lo mismo?",
+    question: "¿ Es lo mismo utilizar .js que .jsx ?",
+    text: "Como sabemos en la actualidad se puede escribir código react en archivos .js como en .jsx pero es lo mismo?",
     option: false,
     optionTwo: true,
     awnser: "Ambos funcionan pero los archivos .jsx tienen mejor rendimiento",
@@ -29,7 +29,7 @@ const questionsObjs = [
     id: 3,
     question:
       '¿ Existe alguna diferencia entre un "componente" y un "elemento" ?',
-    text: "Como sabemos en react existen los componentes y a su vez los elemento ¿Pero son lo mismo o estan relacionados?",
+    text: "Como sabemos en react existen los componentes y a su vez los elemento ¿Pero son lo mismo o están relacionados?",
     option: true,
     optionTwo: false,
     awnser:
@@ -47,7 +47,7 @@ const questionsObjs = [
   {
     id: 5,
     question:
-      "¿ React Native esta mas orientada al desarrollo de apps para movil ?",
+      "¿ React Native esta mas orientada al desarrollo de apps para móvil ?",
     text: "Como sabemos ReactJS y React Native no son lo mismo, ¿Pero entonces para que fue creada?",
     option: true,
     optionTwo: false,
@@ -69,24 +69,24 @@ const questionsObjs = [
     option: false,
     optionTwo: true,
     awnser:
-      'Brindar y utilizar un "DOM virtual" en React, usualmente se convierte en una de sus principales ventajas cuando hablamos acerca de esta librería JavaScript y ademas el DOM virtual es mucho más rápido y económico que el real.',
+      'Brindar y utilizar un "DOM virtual" en React, usualmente se convierte en una de sus principales ventajas cuando hablamos acerca de esta librería JavaScript y además el DOM virtual es mucho más rápido y económico que el real.',
   },
   {
     id: 8,
-    question: "¿ Las key prop tiene algun beneficio cuando se le agregan ?",
-    text: "Generalmente cuando se realiza un .map de un array, sale un warning sobre que es necesario la key. Entonces crees que tiene algun beneficio el agregarlo?",
+    question: "¿ Las key prop tiene algún beneficio cuando se le agregan ?",
+    text: "Generalmente cuando se realiza un .map de un array, sale un warning sobre que es necesario la key. Entonces crees que tiene algún beneficio el agregarlo?",
     option: true,
     optionTwo: false,
     awnser:
-      "El beneficio princial es que mejor el rendimiento al rederizar la web.",
+      "El beneficio principal es que mejor el rendimiento al renderizar la web.",
   },
   {
     id: 9,
-    question: "¿ Los Hooks solo se puden usar componentes de funciones ?",
+    question: "¿ Los Hooks solo se pueden usar componentes de funciones ?",
     text: "Hooks son una nueva característica en React 16.8. Estos te permiten usar el estado y otras características de React sin escribir en una ...",
     option: true,
     optionTwo: false,
-    awnser: "Los Hooks solo se puden usar componentes de funciones.",
+    awnser: "Los Hooks solo se pueden usar componentes de funciones.",
   },
   {
     id: 10,
@@ -96,7 +96,7 @@ const questionsObjs = [
     option: false,
     optionTwo: true,
     awnser:
-      "React crea un DOM virtual, por ende utiliza otra manera de escribir codigo HTML.",
+      "React crea un DOM virtual, por ende utiliza otra manera de escribir código HTML.",
   },
   {
     id: 11,
@@ -111,8 +111,8 @@ const questionsObjs = [
   {
     id: 12,
     question:
-      "¿ Cuando creamos un componente debemos colocar la primera letra en Mayuscula ?",
-    text: "Cuando se crea un nuevo componente ¿Si o si debe llevar su primera letra mayuscula?",
+      "¿ Cuando creamos un componente debemos colocar la primera letra en Mayúscula ?",
+    text: "Cuando se crea un nuevo componente ¿Si o si debe llevar su primera letra mayúscula?",
     option: true,
     optionTwo: false,
     awnser:
@@ -125,13 +125,13 @@ const questionsObjs = [
     option: false,
     optionTwo: true,
     awnser:
-      "No, el render() solo se debe escribir en los componentes de clases al final, para que renderize todo el codigo",
+      "No, el render() solo se debe escribir en los componentes de clases al final, para que renderice todo el código",
   },
   {
     id: 14,
     question:
-      "¿ La manera correcta de definir un style en una lina en React es <div style={{ max-height: 10 }}> ?",
-    text: "React crea un DOM virtual, por ende utiliza otra manera de escribir codigo HTML hasta incluso los styles, ¿ Pero esta bien escrito ese div?",
+      "¿ La manera correcta de definir un style en una linea en React es <div style={{ max-height: 10 }}> ?",
+    text: "React crea un DOM virtual, por ende utiliza otra manera de escribir código  HTML hasta incluso los styles, ¿ Pero esta bien escrito ese div?",
     option: false,
     optionTwo: true,
     awnser:
@@ -141,7 +141,7 @@ const questionsObjs = [
     id: 15,
     question:
       "¿ Los Hooks en React vinieron a resolver el ciclo de vida de los eventos en los componentes de funciones?",
-    text: "Los Hooks vinieron a React a resolver muchos problemas que los componentes de funciones no tenian a comparacion de los componentes de clase, ¿Pero vinieron a resolver el ciclo de vida de los eventos? ",
+    text: "Los Hooks vinieron a React a resolver muchos problemas que los componentes de funciones no tenían a comparación de los componentes de clase, ¿Pero vinieron a resolver el ciclo de vida de los eventos?  ",
     option: true,
     optionTwo: false,
     awnser:
@@ -159,7 +159,7 @@ const questionsObjs = [
   {
     id: 17,
     question: "¿ Funcionan los Hooks con tipado estático ?",
-    text: "Como sabemos en React existen hooks ¿ Pero nosotros podemos crear hooks propios ?",
+    text: "Como sabemos en React nosotros podemos en diferentes lenguajes ¿Pero podemos usarlo con lenguajes de tipado estático?",
     option: true,
     optionTwo: false,
     awnser:
@@ -168,7 +168,7 @@ const questionsObjs = [
   {
     id: 18,
     question: "¿ En el Hook useEffect, puede ser ejecutado muchas veces ?",
-    text: " El hook useEffect se ejecutará después de que el renderizado es confirmado en la pantalla. ¿ Pero se podra llamar nuevamente?",
+    text: " El hook useEffect se ejecutará después de que el renderizado es confirmado en la pantalla. ¿ Pero se podrá  llamar nuevamente?",
     option: true,
     optionTwo: false,
     awnser:

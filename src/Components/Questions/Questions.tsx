@@ -74,7 +74,7 @@ export default function Questions() {
         icon: "success",
         text: res[0].awnser,
         showConfirmButton: false,
-        timer: 2300,
+        timer: 2500,
         timerProgressBar: true,
       });
       setPoints(points + 5);
