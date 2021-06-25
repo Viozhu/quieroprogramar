@@ -29,7 +29,7 @@ const questionsObjs = [
     id: 3,
     question:
       '¿ Existe alguna diferencia entre un "componente" y un "elemento" ?',
-    text: "",
+    text: "Como sabemos en react existen los componentes y a su vez los elemento ¿Pero son lo mismo o estan relacionados?",
     option: true,
     optionTwo: false,
     awnser:
@@ -48,7 +48,7 @@ const questionsObjs = [
     id: 5,
     question:
       "¿ React Native esta mas orientada al desarrollo de apps para movil ?",
-    text: "Como sabemos ReactJS y React Native no son lo mismo, pero entonces para que fue creada?",
+    text: "Como sabemos ReactJS y React Native no son lo mismo, ¿Pero entonces para que fue creada?",
     option: true,
     optionTwo: false,
     awnser:
@@ -64,13 +64,12 @@ const questionsObjs = [
   },
   {
     id: 7,
-    question:
-      " En un button ¿ Es lo mismo escribir onclick='funcionUno()' que       onClick={funcionUno()?",
-    text: "",
+    question: "¿ Un DOM real es lo mismo que el DOM virtual de React ? ",
+    text: "Como sabemos React crea un Dom virtual, ¿Pero es lo mismo a un DOM tradicional?",
     option: false,
     optionTwo: true,
     awnser:
-      "React crea un DOM virtual, por ende utiliza otra manera de escribir codigo HTML.",
+      'Brindar y utilizar un "DOM virtual" en React, usualmente se convierte en una de sus principales ventajas cuando hablamos acerca de esta librería JavaScript y ademas el DOM virtual es mucho más rápido y económico que el real.',
   },
   {
     id: 8,
@@ -88,6 +87,102 @@ const questionsObjs = [
     option: true,
     optionTwo: false,
     awnser: "Los Hooks solo se puden usar componentes de funciones.",
+  },
+  {
+    id: 10,
+    question:
+      " En un button ¿ Es lo mismo escribir onclick='funcionUno()' que   onClick={funcionUno()?",
+    text: "Como sabemos React crea un DOM virtual, ¿Pero los eventos se escriben igual?",
+    option: false,
+    optionTwo: true,
+    awnser:
+      "React crea un DOM virtual, por ende utiliza otra manera de escribir codigo HTML.",
+  },
+  {
+    id: 11,
+    question:
+      "¿ Los comentarios en React se codean de la misma manera que en JavaScript ?",
+    text: "Ya sabemos de la diferencias entre el DOOM virtual y el DOM real pero los comentarios se escriben de la misma manera ?  Ejemplo: // Hola  ?",
+    option: false,
+    optionTwo: true,
+    awnser:
+      "Los comentarios se escriben de la siguiente manera {/* hola */} ya que estamos utilizando el DOM virtual",
+  },
+  {
+    id: 12,
+    question:
+      "¿ Cuando creamos un componente debemos colocar la primera letra en Mayuscula ?",
+    text: "Cuando se crea un nuevo componente ¿Si o si debe llevar su primera letra mayuscula?",
+    option: true,
+    optionTwo: false,
+    awnser:
+      "Si está renderizando su componente usando JSX, el nombre de ese componente debe comenzar con una letra mayúscula; de lo contrario, React arrojará un error como etiqueta no reconocida.",
+  },
+  {
+    id: 13,
+    question: "¿ En los componentes de funciones se debe escribir render() ?",
+    text: "Como sabemos en React se pude escribir de dos maneras los componentes,  como funciones o como clases. Ambos son similares pero se escriben de diferentes maneras.",
+    option: false,
+    optionTwo: true,
+    awnser:
+      "No, el render() solo se debe escribir en los componentes de clases al final, para que renderize todo el codigo",
+  },
+  {
+    id: 14,
+    question:
+      "¿ La manera correcta de definir un style en una lina en React es <div style={{ max-height: 10 }}> ?",
+    text: "React crea un DOM virtual, por ende utiliza otra manera de escribir codigo HTML hasta incluso los styles, ¿ Pero esta bien escrito ese div?",
+    option: false,
+    optionTwo: true,
+    awnser:
+      "La manera correcta de escribir los style es diferente a la normal, y en este caso es la siguiente <div style={{ maxHeight: 10 }}> ",
+  },
+  {
+    id: 15,
+    question:
+      "¿ Los Hooks en React vinieron a resolver el ciclo de vida de los eventos en los componentes de funciones?",
+    text: "Los Hooks vinieron a React a resolver muchos problemas que los componentes de funciones no tenian a comparacion de los componentes de clase, ¿Pero vinieron a resolver el ciclo de vida de los eventos? ",
+    option: true,
+    optionTwo: false,
+    awnser:
+      "Los Hooks son funciones que te permiten “enganchar” el estado de React y el ciclo de vida desde componentes de función",
+  },
+  {
+    id: 16,
+    question: "¿ Uno puede crear sus propios Hooks ?",
+    text: "Como sabemos en React existen hooks ¿ Pero nosotros podemos crear hooks propios ?",
+    option: true,
+    optionTwo: false,
+    awnser:
+      "Los Hooks personalizados son más una convención que una funcionalidad. Si el nombre de una función comienza con ”use” y llama a otros Hooks, decimos que es un Hook personalizado.",
+  },
+  {
+    id: 17,
+    question: "¿ Funcionan los Hooks con tipado estático ?",
+    text: "Como sabemos en React existen hooks ¿ Pero nosotros podemos crear hooks propios ?",
+    option: true,
+    optionTwo: false,
+    awnser:
+      "Los Hooks fueron diseñados con el tipado estático en mente. Al ser funciones, son más fáciles de tipar que patrones como los componentes de orden superior.",
+  },
+  {
+    id: 18,
+    question: "¿ En el Hook useEffect, puede ser ejecutado muchas veces ?",
+    text: " El hook useEffect se ejecutará después de que el renderizado es confirmado en la pantalla. ¿ Pero se podra llamar nuevamente?",
+    option: true,
+    optionTwo: false,
+    awnser:
+      "Si quieres ejecutar un efecto y sanearlo solamente una vez (al montar y desmontar), puedes pasar un array vacío ([]) como segundo argumento",
+  },
+  {
+    id: 19,
+    question:
+      "¿ Son los hooks lentos debido a la creación de funciones en el render ?",
+    text: "  Las preocupaciones de desempeño alrededor de funciones inline en React han estado relacionadas con como al pasar nuevos callbacks en cada renderizado rompe optimizaciones con shouldComponentUpdate en los componentes hijos.",
+    option: false,
+    optionTwo: true,
+    awnser:
+      "No. en los navegadores modernos, el desempeño de los closures comparado con el de las clases no difiere de manera significativa, exceptuando casos extremos.",
   },
 ];
 

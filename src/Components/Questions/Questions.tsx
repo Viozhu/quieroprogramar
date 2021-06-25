@@ -7,6 +7,7 @@ import {
   CardContent,
   Typography,
   Paper,
+  useMediaQuery,
 } from "@material-ui/core";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Swal from "sweetalert2";
@@ -21,6 +22,12 @@ const useStyles = makeStyles((theme: Theme) =>
       justifyContent: "center",
     },
     root: { textAlign: "center", maxWidth: "50rem", margin: "4rem" },
+    rootMovile: {
+      textAlign: "center",
+      maxWidth: "50rem",
+      margin: "1rem",
+      marginTop: "2rem",
+    },
     bullet: {
       display: "inline-block",
       margin: "0 2px",
@@ -52,6 +59,7 @@ export default function Questions() {
   const [points, setPoints] = useState<number>(0);
 
   const classes = useStyles();
+  const matches = useMediaQuery("(max-width:768px)");
 
   const tryAgain = (): void => {
     setNum(0);
@@ -65,8 +73,11 @@ export default function Questions() {
         title: "Correcto",
         icon: "success",
         text: res[0].awnser,
+        showConfirmButton: false,
+        timer: 2300,
+        timerProgressBar: true,
       });
-      setPoints(points + 10);
+      setPoints(points + 5);
     } else {
       Swal.fire({
         title: "Ups,es incorrecto",
@@ -82,7 +93,7 @@ export default function Questions() {
     <>
       <div className={classes.card}>
         <div>
-          <Card className={classes.root}>
+          <Card className={matches ? classes.rootMovile : classes.root}>
             {questionsObjs
               .filter((f) => f.id === num)
               .map((x) => (
