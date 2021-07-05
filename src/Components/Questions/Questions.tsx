@@ -11,6 +11,7 @@ import {
 } from "@material-ui/core";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Swal from "sweetalert2";
+import { CardHeader } from "@material-ui/core";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -73,9 +74,6 @@ export default function Questions() {
         title: "Correcto",
         icon: "success",
         text: res[0].awnser,
-        showConfirmButton: false,
-        timer: 2500,
-        timerProgressBar: true,
       });
       setPoints(points + 5);
     } else {
@@ -98,11 +96,11 @@ export default function Questions() {
               .filter((f) => f.id === num)
               .map((x) => (
                 <>
+                  <Typography variant="h5">{x.id + 1}/20</Typography>
                   <CardContent>
                     <Typography variant="h5" component="h2">
                       {x.question}
                     </Typography>
-
                     <Typography
                       variant="body1"
                       component="p"
@@ -128,7 +126,7 @@ export default function Questions() {
                     </Button>
                   </CardActions>
                 </>
-              ))}{" "}
+              ))}
           </Card>
           <Paper className={classes.paper}>
             <Typography variant="h5" style={{ margin: "1rem" }}>
@@ -145,7 +143,7 @@ export default function Questions() {
               className={classes.paper}
               style={{ margin: "1rem" }}
             >
-              ¡ Intenta de Nuevo !{" "}
+              ¡ Intenta de Nuevo !
             </Button>
           )}
         </div>
